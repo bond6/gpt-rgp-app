@@ -1,0 +1,15 @@
+{
+  "name": "gpt-rgp-app",
+  "version": "1.0.0",
+  "description": "An GPT level Role Play Game for all ages. Fun story for the whole family sharing the life of a noble prince with your family and making it fun for him.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

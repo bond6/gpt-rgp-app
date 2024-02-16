@@ -1,0 +1,5 @@
+services:
+  - name: nodejs-express-api
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
