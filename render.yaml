@@ -1,5 +1,9 @@
 services:
-  - name: nodejs-express-api
-    env: node
-    buildCommand: npm install
-    startCommand: npm start
+  - name: nodejs-express-api            # The name of your service, used for identification within Render.
+    env: node                           # Specifies that this is a Node.js environment.
+    buildCommand: npm ci          # Command to install dependencies. Consider using 'npm ci' for cleaner, more reliable installs based on package-lock.json.
+    startCommand: npm start             # Command to start your Node.js application. Ensure your package.json has a 'start' script.
+    region: oregon                      # (Optional) Specifies the region where your service will be deployed. Default is usually fine, but you can specify if needed.
+    branches:                           # (Optional) Specifies which branches to auto-deploy.
+      - main                            # Default is usually the main/master branch.
+    autoDeploy: true                    # (Optional) Enables or disables automatic deployment on git push. Default is true.
